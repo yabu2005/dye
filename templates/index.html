@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__items set-bg" data-setbg="{% static 'img/hero/pngtree-3d-render-online-shopping-with-mobile-and-bag-image_727266.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-8" style="padding: 10px;">
+                            <div class="hero__text">
+                                <h2>Shop Smart, Live Better.</h2>
+                                <a href="{% url 'shop:product_list' %}" class="primary-btn">Shop <span class="arrow_right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+{% endblock %}

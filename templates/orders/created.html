@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-3">
+        <div class="bg-white rounded p-3">
+            <h2>Thank You</h2>
+            <p>Your order has been successfully completed. Your order number is <strong>{{ order.id }}</strong>.</p>
+        </div>
+    </div>
+{% endblock %}
